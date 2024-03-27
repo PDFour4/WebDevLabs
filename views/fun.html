@@ -47,10 +47,7 @@
         <div id = "item3">
             <h3>My favorite places</h3>
             <div id = "map"></div>
-            <script>
-                (g=>{var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary" , q = "__ib__", m = document, b = window; b = b[c]||(b[c] = {}); var d = b.maps||(b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h||(h = new Promise(async(f, n) => {await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for(k in g)e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
-                ({key: `${process.env.MAPS_API_KEY}`, v: "weekly"});
-            </script>
+            <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=5000%20Forbes%20Avenue+(Carnegie%20Mellon%20University)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
         </div>
         <div id = "item4">
             <img id = "funIMG" src = "../static/Fun Image.png" alt = "Fun Image">
