@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel = "stylesheet" href = "../static/style.css">
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src = "../static/script.js"></script>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "author" content="Raul Melendez">
+    <meta name = "keywords" content = "Carnegie Mellon University, Information Systems">
+    <meta name = "description" content = "Raul Melendez professional website">
+    <title>Raul Melendez</title>
+</head>
+<body onload = "addYear()">
+    <header>
+        <h1 id = "webname">Jose Raul Anaya Melendez</h1>
+        <nav id = "myTopnav" class = "topnav">
+
+            <a href = "../index.html">Home</a>
+
+            <a href = "cv.html">CV</a>
+
+            <a href = "contact.html" class = "active">Contact</a>
+
+            <a href = "fun.html">For Fun</a>
+            
+            <a href = "javascript:void(0);" class = "icon"><i class="fa fa-bars" onclick = "activeNav()"></i></a>
+        </nav>
+    </header>
+    <div class = "main">
+        <h2>Contact Me</h2>
+        <form action = " ">
+                <label for="UserName">Your name (required): </label>
+     
+                <input type="text" name="UserName" id = "UserName" required>
+     
+                <label for="UserEmail">Your email (required): </label>
+     
+                <input type="email" name="UserEmail" id = "UserEmail" required>
+     
+                <label for="UserText">Your text (required): </label>
+     
+                <textarea name="UserText" id = "UserText" cols="30" rows="10" required></textarea>
+     
+                <input id = "SubmitBTN" type="submit" value="SEND" onclick="validate()">
+            <p id = "ValidateMsg"></p>
+        </form>
+        <table>
+            <tr><th>Contact Method</th><th>Description</th></tr>
+            <tr><td>Email</td><td><a href = "raulmelendez088@gmail.com" target = "_blank">raulmelendez088@gmail.com</a></td></tr>
+            <tr><td>Phone</td><td><a href = "2816073052" target = "_blank">281-607-3052</a></td></tr>
+            <tr><td>LinkedIn</td><td><a href = "https://www.linkedin.com/in/jose-raul-anaya-melendez-a020152b3/" target = "_blank">My LinkedIn</a></td></tr>
+        </table>
+    </div>
+    <footer>
+        <p id = "copyYear"> Raul Melendez &copy;</p>
+    </footer>
+</body>
+</html>
